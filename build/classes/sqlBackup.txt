@@ -1,0 +1,19 @@
+create table student_tbl(
+stuNo number(5) primary key,
+password varchar2(50) not null,
+stuName varchar2(50) not null,
+grade number(1) not null,
+kor number(3) not null,
+math number(3) not null,
+eng number(3) not null
+)
+
+--drop table student_tbl;
+--본인 학번 본인이름 2학년
+--모든 컬럼에 값을 넣을 때에는 컬럼을 쓰지 않아도 됨. ex> (stuNo,password, stuName, grade, kor, math, eng) X
+insert into STUDENT_TBL(stuNo,password, stuName, grade, kor, math, eng) values(20113, 'MyungJaePark', '박명재', 2, 100, 100, 100);
+insert into STUDENT_TBL(stuNo,password, stuName, grade, kor, math, eng) values(20111, 'aaaa', '홍길동', 2, 100, 100, 100);
+insert into STUDENT_TBL(stuNo,password, stuName, grade, kor, math, eng) values(20112, 'ssss', '이슬이', 2, 100, 100, 100);
+insert into STUDENT_TBL(stuNo,password, stuName, grade, kor, math, eng) values(20115, 'dddd', '정나라', 2, 100, 100, 100);
+insert into STUDENT_TBL(stuNo,password, stuName, grade, kor, math, eng) values(20116, 'ffff', '오수정', 2, 100, 100, 100);
+select * from STUDENT_TBL;
